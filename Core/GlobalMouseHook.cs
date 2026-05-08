@@ -31,8 +31,7 @@ public class GlobalMouseHook : IDisposable
 
     public GlobalMouseHook()
     {
-        var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        var logDirectory = Path.Combine(appDataPath, "AirBar");
+        var logDirectory = AppIdentity.AppDataDirectory;
         Directory.CreateDirectory(logDirectory);
         _logFilePath = Path.Combine(logDirectory, "hook_debug.log");
     }

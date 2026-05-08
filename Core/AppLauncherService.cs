@@ -15,8 +15,7 @@ public class AppLauncherService
 
     public AppLauncherService()
     {
-        var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        var launcherDirectory = Path.Combine(appDataPath, "AirBar");
+        var launcherDirectory = AppIdentity.AppDataDirectory;
         Directory.CreateDirectory(launcherDirectory);
         _launcherFilePath = Path.Combine(launcherDirectory, "launcher.json");
         Load();

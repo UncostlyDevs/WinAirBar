@@ -7,7 +7,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Assets/AirBarLogo.xaml"/>
+                <ResourceDictionary Source="Assets/WinAirBarLogo.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             
             <!-- Default dark color palette -->

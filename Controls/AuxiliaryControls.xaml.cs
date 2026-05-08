@@ -194,7 +194,7 @@ public partial class AuxiliaryControls : WpfUserControl
             : $"{slot.TargetPath} {slot.Arguments}";
 
         var result = System.Windows.MessageBox.Show(
-            $"AirBar will open this custom target:\n\n{target}\n\nOnly continue if you configured this slot and trust this target.",
+            $"WinAirBar will open this custom target:\n\n{target}\n\nOnly continue if you configured this slot and trust this target.",
             "Confirm Custom Action",
             MessageBoxButton.YesNo,
             MessageBoxImage.Warning);
@@ -225,7 +225,7 @@ public partial class AuxiliaryControls : WpfUserControl
         if (System.Windows.Application.Current.Resources["Win11ContextMenuStyle"] is Style ctxStyle)
             menu.Style = ctxStyle;
 
-        menu.Items.Add(CreateMenuItem("Edit in AirBar Settings", () => ShowPopup(placementTarget, CreateSettingsPopup())));
+        menu.Items.Add(CreateMenuItem("Edit in WinAirBar Settings", () => ShowPopup(placementTarget, CreateSettingsPopup())));
 
         var builtInMenu = new MenuItem { Header = "Replace with built-in" };
         if (System.Windows.Application.Current.Resources["Win11MenuItemStyle"] is Style itemStyle)

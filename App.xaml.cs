@@ -24,8 +24,7 @@ public partial class App : WpfApplication
     {
         try
         {
-            var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            var logDirectory = Path.Combine(appDataPath, "AirBar");
+            var logDirectory = AppIdentity.AppDataDirectory;
             Directory.CreateDirectory(logDirectory);
             _logFilePath = Path.Combine(logDirectory, "app_debug.log");
             Log("App constructor called");
@@ -211,7 +210,7 @@ public partial class App : WpfApplication
             _notifyIcon = new System.Windows.Forms.NotifyIcon
             {
                 Icon = LoadApplicationIcon(),
-                Text = "AirBar",
+                Text = AppIdentity.ProductName,
                 Visible = true
             };
 

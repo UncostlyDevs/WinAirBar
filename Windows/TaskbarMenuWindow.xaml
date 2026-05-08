@@ -44,7 +44,7 @@
                                 Width="28"
                                 Height="26"
                                 Padding="0"
-                                ToolTip="AirBar settings"
+                             ToolTip="WinAirBar settings"
                                 Click="OnQuickSettingsClick"
                                 Style="{StaticResource AuxiliaryButtonStyle}">
                             <controls:ThemeIconView Kind="Settings"

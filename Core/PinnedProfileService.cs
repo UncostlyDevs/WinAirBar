@@ -12,8 +12,7 @@ public class PinnedProfileService
 
     public PinnedProfileService()
     {
-        var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        _profilesDirectory = Path.Combine(appDataPath, "AirBar", "Profiles");
+        _profilesDirectory = Path.Combine(AppIdentity.AppDataDirectory, "Profiles");
         Directory.CreateDirectory(_profilesDirectory);
     }
 

@@ -21,6 +21,7 @@ TestResults/
 *.cache
 app_debug.log
 AirBarSettings.json
+WinAirBarSettings.json
 WindowHistory.json
 AppLauncher.json
 PinnedProfiles.json

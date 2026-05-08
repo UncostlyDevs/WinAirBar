@@ -18,7 +18,7 @@ public class BottomActionBarService
         new() { Id = BottomBuiltInAction.Launcher, Label = "Launcher", IconText = "\uE71D", IconGlyph = "\uE71D" },
         new() { Id = BottomBuiltInAction.PowerMenu, Label = "Power", IconText = "\uE7E8", IconGlyph = "\uE7E8" },
         new() { Id = BottomBuiltInAction.Settings, Label = "Settings", IconText = "\uE713", IconGlyph = "\uE713" },
-        new() { Id = BottomBuiltInAction.AirBarSettings, Label = "AirBar Settings", IconText = "\uE713", IconGlyph = "\uE713" },
+        new() { Id = BottomBuiltInAction.AirBarSettings, Label = "WinAirBar Settings", IconText = "\uE713", IconGlyph = "\uE713" },
         new() { Id = BottomBuiltInAction.Lock, Label = "Lock", IconText = "\uE72E", IconGlyph = "\uE72E" },
         new() { Id = BottomBuiltInAction.Sleep, Label = "Sleep", IconText = "\uE708", IconGlyph = "\uE708" },
         new() { Id = BottomBuiltInAction.Shutdown, Label = "Shutdown", IconText = "\uE7E8", IconGlyph = "\uE7E8" },
@@ -174,7 +174,7 @@ public class BottomActionBarService
     }
 
     public string GetAppDataDirectory()
-        => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "AirBar");
+        => AppIdentity.AppDataDirectory;
 
     private BitmapSource? LoadImageOrAssociatedIcon(string path)
     {

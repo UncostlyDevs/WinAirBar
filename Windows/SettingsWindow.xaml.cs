@@ -34,8 +34,7 @@ public partial class SettingsWindow : Window
     {
         try
         {
-            var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            var logDirectory = Path.Combine(appDataPath, "AirBar");
+            var logDirectory = AppIdentity.AppDataDirectory;
             Directory.CreateDirectory(logDirectory);
             _logFilePath = Path.Combine(logDirectory, "settings_debug.log");
             Log("SettingsWindow constructor started");

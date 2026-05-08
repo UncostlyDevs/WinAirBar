@@ -1,6 +1,8 @@
-# AirBar
+# WinAirBar
 
-AirBar is a lightweight floating Windows taskbar menu for quickly opening active windows, recent windows, pinned or frequent apps, power controls, volume controls, and settings from a compact AirBar-style flyout.
+WinAirBar is a lightweight floating Windows taskbar menu for quickly opening active windows, recent windows, pinned or frequent apps, power controls, volume controls, and settings from a compact flyout.
+
+WinAirBar was previously released as AirBar. Version 1.2.0 updates the product name, release metadata, website, and support contact while keeping the same core workflow.
 
 ## Features
 
@@ -31,7 +33,7 @@ dotnet build FloatingTaskbarMenu.csproj
 dotnet run --project FloatingTaskbarMenu.csproj
 ```
 
-AirBar runs in the background and places an icon in the Windows notification area. Open Settings from the tray menu or use the configured mouse trigger to open the floating menu.
+WinAirBar runs in the background and places an icon in the Windows notification area. Open Settings from the tray menu or use the configured mouse trigger to open the floating menu.
 
 ## Publish A Windows Build
 
@@ -44,14 +46,15 @@ The self-contained executable is written under `bin\Release\net8.0-windows\win-x
 To create a checksum for a prebuilt EXE:
 
 ```powershell
-Get-FileHash .\bin\Release\net8.0-windows\win-x64\publish\AirBar.exe -Algorithm SHA256
+Get-FileHash .\bin\Release\net8.0-windows\win-x64\publish\WinAirBar.exe -Algorithm SHA256
 ```
 
 ## Security And Privacy
 
-- AirBar does not collect telemetry or send app data to a remote service.
-- Settings, launcher data, pinned profiles, logs, and window history are stored locally under `%AppData%\AirBar`.
-- Autostart uses the current user's Windows Run key only. AirBar does not require administrator privileges.
+- WinAirBar does not collect telemetry or send app data to a remote service.
+- Settings, launcher data, pinned profiles, logs, and window history are stored locally under `%AppData%\WinAirBar`.
+- On first v1.2.0 launch, existing AirBar data is copied from `%AppData%\AirBar` when WinAirBar data does not already exist. The old folder is left in place as a backup.
+- Autostart uses the current user's Windows Run key only. WinAirBar does not require administrator privileges.
 - Power actions ask for confirmation before sleep, shutdown, restart, or sign out.
 - Custom action slots ask for confirmation before the first launch of a configured target.
 - If you download a prebuilt EXE, verify its SHA256 checksum against the checksum published with the release.
@@ -63,12 +66,13 @@ Get-FileHash .\bin\Release\net8.0-windows\win-x64\publish\AirBar.exe -Algorithm 
 - `Core/` - window tracking, settings, launcher, history, theme, and system helper services.
 - `Models/` - serializable app and settings models.
 - `Styles/` - shared Windows 11 style resources.
-- `Windows/` - AirBar windows and dialogs.
-- `Assets/` - AirBar logo and application icon.
+- `Windows/` - WinAirBar windows and dialogs.
+- `Assets/` - WinAirBar logo and application icon.
 
 ## Project Info
 
-Maintainer and contact information will be added later.
+- Website: https://winairbar.com
+- Contact: sag@winairbar.com
 
 ## License
 

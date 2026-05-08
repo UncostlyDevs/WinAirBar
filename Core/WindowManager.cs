@@ -100,7 +100,8 @@ public class WindowManager
 
     private bool ShouldSkipWindow(string processName, string title)
     {
-        if (processName.Equals("AirBar", StringComparison.OrdinalIgnoreCase) ||
+        if (processName.Equals("WinAirBar", StringComparison.OrdinalIgnoreCase) ||
+            processName.Equals("AirBar", StringComparison.OrdinalIgnoreCase) ||
             processName.Equals("FloatingTaskbarMenu", StringComparison.OrdinalIgnoreCase))
             return true;
 

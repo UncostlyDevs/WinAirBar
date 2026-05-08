@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
-    <AssemblyName>AirBar</AssemblyName>
+    <AssemblyName>WinAirBar</AssemblyName>
     <RootNamespace>FloatingTaskbarMenu</RootNamespace>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
@@ -15,13 +15,15 @@
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <ApplicationIcon>Assets\AirBarApp.ico</ApplicationIcon>
-    <Version>1.1.0</Version>
-    <Authors>AirBar Contributors</Authors>
-    <Company>AirBar</Company>
-    <Product>AirBar</Product>
-    <Description>A lightweight floating Windows taskbar menu.</Description>
-    <Copyright>Copyright (c) 2026 AirBar Contributors</Copyright>
+    <ApplicationIcon>Assets\WinAirBarApp.ico</ApplicationIcon>
+    <Version>1.2.0</Version>
+    <Authors>WinAirBar Contributors</Authors>
+    <Company>WinAirBar</Company>
+    <Product>WinAirBar</Product>
+    <Description>A lightweight floating Windows taskbar menu for Windows.</Description>
+    <Copyright>Copyright (c) 2026 WinAirBar Contributors</Copyright>
+    <PackageProjectUrl>https://winairbar.com</PackageProjectUrl>
+    <PackageTags>windows;taskbar;launcher;productivity;winairbar</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,8 +35,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Assets\AirBarLogo.png" />
-    <Resource Include="Assets\AirBarLogo.png" />
+    <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+      <_Parameter1>Website</_Parameter1>
+      <_Parameter2>https://winairbar.com</_Parameter2>
+    </AssemblyAttribute>
+    <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+      <_Parameter1>Contact</_Parameter1>
+      <_Parameter2>sag@winairbar.com</_Parameter2>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\WinAirBarLogo.png" />
+    <Resource Include="Assets\WinAirBarLogo.png" />
     <None Remove="Assets\ThemeIcons\**\*.ico" />
     <None Remove="Assets\ThemeIcons\**\*.png" />
     <Resource Include="Assets\ThemeIcons\**\*.ico" />

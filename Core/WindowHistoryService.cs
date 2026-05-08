@@ -15,8 +15,7 @@ public class WindowHistoryService
 
     public WindowHistoryService()
     {
-        var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        _historyDirectory = Path.Combine(appDataPath, "AirBar", "History");
+        _historyDirectory = Path.Combine(AppIdentity.AppDataDirectory, "History");
         Directory.CreateDirectory(_historyDirectory);
         _historyFilePath = Path.Combine(_historyDirectory, "history.json");
         LoadHistory();

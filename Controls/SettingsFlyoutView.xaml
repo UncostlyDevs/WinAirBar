@@ -11,7 +11,7 @@
                                     IconSize="16"
                                     Foreground="{DynamicResource AccentBrush}"
                                     Margin="0,0,8,0"/>
-            <TextBlock Text="AirBar Settings"
+            <TextBlock Text="WinAirBar Settings"
                        FontSize="14"
                        FontWeight="SemiBold"
                        FontFamily="{DynamicResource AirBarDisplayFontFamily}"

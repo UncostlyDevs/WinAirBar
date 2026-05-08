@@ -1,4 +1,4 @@
-# AirBar Theme Icon Sources
+# WinAirBar Theme Icon Sources
 
 Only visual icon files are bundled here. No scripts, registry files, shell
 binaries, sound files, skin packs, installers, DLLs, or system components are
@@ -17,7 +17,7 @@ Risk labels:
 
 ## Current Release Policy
 
-This build prioritizes authentic retro visuals for noncommercial use. If AirBar
+This build prioritizes authentic retro visuals for noncommercial use. If WinAirBar
 is ever sold, relicensed commercially, or distributed as a clean-room product,
 remove every `authentic-noncommercial` asset and keep only default modern themes
 plus `permissive` replacements.
@@ -147,5 +147,4 @@ where it differs from the requested theme alias.
 - `win10/folder.png` from `24x24/apps/system-file-manager.png`
 - `win10/launcher.png` from `24x24/categories/applications-system.png`
 - `win10/power.png` from `24x24/apps/preferences-system-power.png` resolved to `24x24/apps/gnome-power-manager.png`
-
 
